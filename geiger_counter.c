@@ -38,5 +38,5 @@ void tim_geiger_counter_callback(void const * argument)
 void geiger_counter_init(void)
 {
 	pr_debugln("starting geiger counter");
-	osTimerStart(tim_geiger_counterHandle, geiger_counter_period_ms);
+	//osTimerStart(tim_geiger_counterHandle, geiger_counter_period_ms);
 }
