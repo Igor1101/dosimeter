@@ -1,7 +1,7 @@
 /* geiger_counter.c
  * tube driver code
  */
-#include <serial/serial.h>
+#include <generic/serial.h>
 #include "geiger_counter.h"
 // for M4011
 #define CPM 151
