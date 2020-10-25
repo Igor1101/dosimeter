@@ -12,5 +12,6 @@ extern const uint32_t geiger_counter_period_ms;
 
 
 void geiger_counter_init(void);
+void tim_geiger_counter_callback_1m(void const * argument);
 
 #endif /* INC_GEIGER_COUNTER_H_ */

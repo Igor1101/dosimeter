@@ -26,8 +26,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	counter++;
 }
 
-/* tim_geiger_counter_callback function */
-void tim_geiger_counter_callback(void const * argument)
+/* tim_geiger_counter_callback function
+ * this should be started each 1 minute */
+void tim_geiger_counter_callback_1m(void const * argument)
 {
 	pr_debugln("Counter=%d counts, %d MkRoentgen %d NanoSv", counter,
 			(counter*100)/CPM,
