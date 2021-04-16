@@ -13,6 +13,7 @@ extern const uint32_t geiger_counter_period_ms;
 
 void geiger_counter_init(void);
 void tim_geiger_counter_callback_1m(void const * argument);
+void geiger_counter_callback(uint32_t time);
 void geiger_counter_int_callback(void);
 
 extern uint32_t geiger_counter_mkroentgen_last;
