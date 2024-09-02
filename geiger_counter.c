@@ -31,7 +31,7 @@ void geiger_counter_callback(uint32_t time)
 	geiger_counter_mkroentgen_last = (counter*100 * time)/CPM / 60;
 	geiger_counter_nanosv_last = (counter*1000 * time)/CPM / 60;
 	tty_println("Counter=%d counts", counter);
-	tty_println("%d MkRoentgen %d NanoSv",
+	tty_println("%d MkR %d NanoSv",
 			geiger_counter_mkroentgen_last,
 			geiger_counter_nanosv_last);
 	counter = 0;
